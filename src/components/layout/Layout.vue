@@ -82,7 +82,7 @@
 			</div>
 
 			<!-- Footer -->
-			<footer class="bg-secondary text-white py-2 text-center">
+			<footer class="bg-secondary text-white py-2 text-center z-2">
 				<p class="mb-0">© 2024 Rent-a-Park. All Rights Reserved.</p>
 			</footer>
 		</div>
@@ -99,8 +99,12 @@ export default {
 	},
 	methods: {
 		toggleSidebar() {
-			document.body.classList.toggle('overflow-hidden');
 			this.isSidebarOpen = !this.isSidebarOpen;
+			// if (this.isSidebarOpen) {
+			// 	document.body.classList.remove('overflow-hidden');
+			// } else {
+			// 	document.body.classList.add('overflow-hidden');
+			// }
 		},
 	},
 };
@@ -108,7 +112,7 @@ export default {
 
 <style scoped>
 .sidebar {
-	width: 250px;
+	min-width: 250px;
 }
 
 .nav-link {

@@ -5,7 +5,7 @@ export default [
         plz: 9000,
         street: 'Teufenerstrasse 11',
         preis: 5.0,
-        distance: 100,
+        distance: 8,
         img: 'parkplatz1.jpg'
     },
     {
@@ -14,7 +14,7 @@ export default [
         plz: 9000,
         street: 'Marktplatz 1',
         preis: 7.0,
-        distance: 50,
+        distance: 5,
         img: 'parkplatz2.jpg'
     },
     {
@@ -23,7 +23,7 @@ export default [
         plz: 9010,
         street: 'Dufourstrasse 50',
         preis: 6.5,
-        distance: 300,
+        distance: 1,
         img: 'parkplatz3.jpg'
     },
     {
@@ -32,7 +32,7 @@ export default [
         plz: 9030,
         street: 'Hauptstrasse 25',
         preis: 4.0,
-        distance: 500,
+        distance: 2,
         img: 'parkplatz4.jpg'
     },
     {
@@ -41,7 +41,7 @@ export default [
         plz: 9000,
         street: 'Bahnhofstrasse 12',
         preis: 8.5,
-        distance: 80,
+        distance: 3,
         img: 'parkplatz5.jpg'
     }
 ]

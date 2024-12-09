@@ -33,7 +33,6 @@ export default {
 <style scoped>
 .card {
 	width: 100%;
-	max-width: 300px;
 	margin: 10px;
 	cursor: pointer;
 	border: 1px solid #ddd;

@@ -22,7 +22,7 @@ function goBack() {
 			<h1 class="mb-0 flex-grow-1 text-truncate" style="font-size: 1.5rem;">{{ record.name }}</h1>
 		</div>
 
-		<div class="mx-auto" style="max-width: 600px;">
+		<div class="mx-auto">
 			<img :src="record.img" class="card-img-top mb-3" :alt="record.name" />
 			<form>
 				<div class="mb-3">

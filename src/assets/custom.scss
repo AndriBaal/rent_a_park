@@ -1,12 +1,10 @@
 @import "bootstrap/scss/functions";
 @import "bootstrap/scss/variables";
 
-$primary: #1f2d5a; // set the $primary variable
+$primary: #1f2d5a;
 
-// merge with existing $theme-colors map
 $theme-colors: map-merge($theme-colors, (
   "primary": $primary
 ));
 
-// set changes
 @import "bootstrap";

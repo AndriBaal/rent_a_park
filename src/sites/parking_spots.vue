@@ -16,7 +16,7 @@ function toggleFilterText() {
   <h1 class="text-center">Parkplätze</h1>
 
   <!-- Collapsible Filter Form -->
-  <div class="container p-0">
+  <div class="container">
     <button
       class="btn btn-outline-primary w-100 mb-1"
       type="button"
@@ -89,7 +89,7 @@ function toggleFilterText() {
     <div
       v-for="record in records"
       :key="record.name"
-      class="col-12 col-md-6 d-flex justify-content-center"
+      class="col-12 d-flex justify-content-center"
     >
       <ParkingCard :record="record" />
     </div>
@@ -97,10 +97,4 @@ function toggleFilterText() {
 </template>
 
 <style scoped>
-.container {
-	padding: 20px;
-}
-.row {
-	gap: 15px;
-}
 </style>
