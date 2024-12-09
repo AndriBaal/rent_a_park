@@ -6,7 +6,7 @@ export default [
         street: 'Teufenerstrasse 11',
         preis: 5.0,
         distance: 8,
-        img: 'parkplatz1.jpg'
+        img: './parkplatz1.jpg'
     },
     {
         name: 'Zentraler Parkplatz',
@@ -15,7 +15,7 @@ export default [
         street: 'Marktplatz 1',
         preis: 7.0,
         distance: 5,
-        img: 'parkplatz2.jpg'
+        img: './parkplatz2.jpg'
     },
     {
         name: 'Parkplatz bei der Uni',
@@ -24,7 +24,7 @@ export default [
         street: 'Dufourstrasse 50',
         preis: 6.5,
         distance: 1,
-        img: 'parkplatz3.jpg'
+        img: './parkplatz3.jpg'
     },
     {
         name: 'Parkplatz in Abtwil',
@@ -33,7 +33,7 @@ export default [
         street: 'Hauptstrasse 25',
         preis: 4.0,
         distance: 2,
-        img: 'parkplatz4.jpg'
+        img: './parkplatz4.jpg'
     },
     {
         name: 'Bahnhof Parkplatz',
@@ -42,6 +42,6 @@ export default [
         street: 'Bahnhofstrasse 12',
         preis: 8.5,
         distance: 3,
-        img: 'parkplatz5.jpg'
+        img: './parkplatz5.jpg'
     }
 ]
