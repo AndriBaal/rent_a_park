@@ -32,7 +32,7 @@ export default [
         plz: 9030,
         street: 'Hauptstrasse 25',
         preis: 4.0,
-        distance: 2,
+        distance: 2000,
         img: 'parkplatz4.jpg'
     },
     {

@@ -5,7 +5,7 @@ import records from '@/records/records.js';
 
 const route = useRoute();
 const router = useRouter();
-const record = ref(records.find(r => r.name === route.params.name));
+const record = ref(records.find(r => r.name === route.params.name) || {});
 
 function goBack() {
 	router.go(-1); // Navigate back to the previous page
@@ -25,27 +25,27 @@ function goBack() {
 		<div class="mx-auto">
 			<img :src="record.img" class="card-img-top mb-3" :alt="record.name" />
 			<form>
-				<div class="mb-3">
+				<div class="mb-2">
 					<label class="form-label">Name</label>
 					<input type="text" class="form-control" v-model="record.name" readonly />
 				</div>
-				<div class="mb-3">
+				<div class="mb-2">
 					<label class="form-label">Ort</label>
 					<input type="text" class="form-control" v-model="record.ort" readonly />
 				</div>
-				<div class="mb-3">
+				<div class="mb-2">
 					<label class="form-label">Postleitzahl (PLZ)</label>
 					<input type="text" class="form-control" v-model="record.plz" readonly />
 				</div>
-				<div class="mb-3">
+				<div class="mb-2">
 					<label class="form-label">Strasse</label>
 					<input type="text" class="form-control" v-model="record.street" readonly />
 				</div>
-				<div class="mb-3">
+				<div class="mb-2">
 					<label class="form-label">Preis pro Stunde</label>
 					<input type="text" class="form-control" v-model="record.preis" readonly />
 				</div>
-				<div class="mb-3">
+				<div class="mb-2">
 					<label class="form-label">Distanz (Meter)</label>
 					<input type="text" class="form-control" v-model="record.distance" readonly />
 				</div>

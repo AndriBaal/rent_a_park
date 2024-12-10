@@ -2,18 +2,36 @@
 </script>
 
 <template>
-  <div>
-    <h1 class="text-center mb-4">Karte</h1>
-    <div
-      class="map-container"
-      style="width: 100%; height: 500px; overflow: scroll; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-      <img
-        src="/map.png"
-        alt="Map of St. Gallen"
-      />
+    <h1 class="text-center mb-1">Karte</h1>
+    <div class="map-container">
+        <img src="/map.png" alt="Map of St. Gallen" class="map-image" />
     </div>
-  </div>
 </template>
 
 <style scoped>
+/* Container styling */
+.map-container {
+  width: 100%;
+  height: 64dvh;
+  position: relative;
+  overflow: hidden; /* Ensure cropping */
+}
+
+/* Image styling for desktop */
+.map-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Mobile-specific styling */
+@media (max-width: 768px) {
+  .map-image {
+    width: auto; /* Use natural width for cropping */
+    height: 100%; /* Maintain full height */
+    object-fit: none; /* Prevent scaling, focus on cropping */
+    object-position: center; /* Crop to the center of the image */
+  }
+}
 </style>

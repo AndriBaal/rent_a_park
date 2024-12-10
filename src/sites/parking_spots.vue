@@ -42,7 +42,7 @@ function toggleFilterText() {
           </div>
 
           <!-- Price -->
-          <div class="col-md-6 mt-0">
+          <div class="col-md-6">
             <input
               type="number"
               class="form-control"
@@ -51,8 +51,8 @@ function toggleFilterText() {
           </div>
 
           <!-- Distance Slider -->
-          <div class="col-md-6 mt-0">
-            <label for="distanceSlider" class="form-label">Distanz (km): <span id="distanceValue">5</span></label>
+          <div class="col-md-6">
+            <label for="distanceSlider" class="form-label mb-0">Distanz (km): <span id="distanceValue">5</span></label>
             <input
               type="range"
               class="form-range"
