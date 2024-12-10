@@ -50,6 +50,16 @@
 							<li class="nav-item">
 								<RouterLink
 									@click="toggleSidebar()"
+									to="/map"
+									class="nav-link"
+									active-class="active"
+								>
+									<i class="bi bi-house-door me-2"></i> Karte
+								</RouterLink>
+							</li>
+							<li class="nav-item">
+								<RouterLink
+									@click="toggleSidebar()"
 									to="/my"
 									class="nav-link"
 									active-class="active"
