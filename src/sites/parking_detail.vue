@@ -49,7 +49,8 @@ function goBack() {
 					<label class="form-label">Distanz (Meter)</label>
 					<input type="text" class="form-control" v-model="record.distance" readonly />
 				</div>
-				<button class="btn btn-primary w-100">JETZT MIETEN!</button>
+				<button v-if="'name' in record" class="btn btn-primary w-100">JETZT MIETEN!</button>
+				<button v-else="" class="btn btn-primary w-100">JETZT VERMIETEN!</button>
 			</form>
 		</div>
 	</div>
